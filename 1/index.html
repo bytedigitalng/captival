@@ -81,7 +81,7 @@
       </div>
     </div>
   </section><-- End Hero -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="homeSlider" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -91,23 +91,27 @@
       <div class="carousel-item active">
         <img src="assets/img/oilgas.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 data-aos="fade-left">First slide label</h1>
-          <p data-aos="fade-left" data-aos-delay="100">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1 data-aos="fade-left">Welcome to Captival</h1>
+          <p data-aos="fade-left" data-aos-delay="100">Building businesses by providing professional services</p>
         </div>
+        <div class="overlay"></div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/estate.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 data-aos="fade-left">second slide label</h1>
-          <p data-aos="fade-left" data-aos-delay="100">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1 data-aos="fade-left">Real Estate Consultancy</h1>
+          <p data-aos="fade-left" data-aos-delay="100">Real estate solutions for every needs</p>
         </div>
+        <div class="overlay"></div>
       </div>
       <div class="carousel-item">
-        <img src="assets/img/ship.jpg" class="d-block w-100" alt="...">
+        <img src="assets/img/agriculture.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h1 data-aos="fade-left">Third slide label</h1>
-          <p data-aos="fade-left" data-aos-delay="100">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1 data-aos="fade-left">Building Agriculure Services</h1>
+          <p data-aos="fade-left" data-aos-delay="100">Providing business and consultancy services in the agricultural
+            sector</p>
         </div>
+        <div class="overlay"></div>
       </div>
     </div>
     <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -303,6 +307,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $("#homeSlider").on('slide.bs.carousel', function () {
+      AOS.refreshHard(true);
+    })
+  </script>
 
 </body>
 
